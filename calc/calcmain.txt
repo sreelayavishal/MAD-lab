@@ -1,0 +1,58 @@
+package com.example.calculator;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
+public class MainActivity extends AppCompatActivity {
+EditText no1,no2,res;
+int n1,n2;
+String s1,s2,s3;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    public void getNumbers()
+    {
+        no1 = (EditText) findViewById(R.id.fn);
+        no2= (EditText) findViewById(R.id.sn);
+        res = (EditText) findViewById(R.id.res);
+        s1 = no1.getText().toString();
+        s2 = no2.getText().toString();
+    }
+    public void sum(View v)
+    {
+        getNumbers();
+        n1 = Integer.parseInt(s1);
+        n2 = Integer.parseInt(s2);
+        s3 = String.valueOf(n1+n2);
+        res.setText(s3);
+    }
+    public void sub(View v)
+    {
+        getNumbers();
+        n1 = Integer.parseInt(s1);
+        n2 = Integer.parseInt(s2);
+        s3 = String.valueOf(n1-n2);
+        res.setText(s3);
+    }
+    public void mul(View v)
+    {
+        getNumbers();
+        n1 = Integer.parseInt(s1);
+        n2 = Integer.parseInt(s2);
+        s3 = String.valueOf(n1*n2);
+        res.setText(s3);
+    }
+    public void div(View v)
+    {
+        getNumbers();
+        n1 = Integer.parseInt(s1);
+        n2 = Integer.parseInt(s2);
+        s3 = String.valueOf(n1/n2);
+        res.setText(s3);
+    }
+};
