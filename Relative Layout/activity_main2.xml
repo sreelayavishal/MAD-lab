@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="100dp"
+        app:srcCompat="@drawable/propic"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="150dp"
+        android:text="change profile photo"
+        android:textColor="@color/purple_200"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        android:text="name"
+        android:textSize="15dp"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+
+        android:hint=""
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:textColor="#F1E9A3"/>
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        android:text="username"
+        android:layout_below="@+id/e1"
+        android:textSize="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:hint=""
+        android:textColor="#F1E9A3"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        android:text="bio"
+        android:layout_below="@id/e2"
+        android:textSize="15dp"
+
+        />
+
+    <EditText
+        android:layout_below="@+id/t3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+
+        android:hint=""
+        android:textColor="#F1E9A3"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+</RelativeLayout>
