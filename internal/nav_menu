@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:ignore="HardcodedText">
+
+    <item android:title="UK"
+        android:id="@+id/it1"/>
+    <item android:title="UAE"
+        android:id="@+id/it2"/>
+    <item android:title="Singapore"
+        android:id="@+id/it3"/>
+    <item android:title="new york"
+        android:id="@+id/it4"
+        />
+
+</menu>
+
+
